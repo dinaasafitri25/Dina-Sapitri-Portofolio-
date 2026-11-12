@@ -1,0 +1,250 @@
+/* Pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+}
+
+.logo span,
+.title span {
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+/* Home */
+.home {
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    gap: 40px;
+}
+
+.home-text h3 {
+    font-size: 24px;
+}
+
+.home-text h1 {
+    font-size: 50px;
+    color: #38bdf8;
+    margin: 10px 0;
+}
+
+.home-text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    max-width: 500px;
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #38bdf8;
+    color: #0f172a;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+}
+
+.home-img img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #38bdf8;
+}
+
+/* About */
+.about {
+    padding: 80px 10%;
+    text-align: center;
+    background: #1e293b;
+}
+
+.title {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 2;
+    color: #cbd5e1;
+}
+
+/* Skills */
+.skills {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.skill-box {
+    background: #1e293b;
+    padding: 30px;
+    width: 250px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    background: #334155;
+}
+
+.skill-box h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.skill-box p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* Project */
+.project {
+    padding: 80px 10%;
+    text-align: center;
+    background: #1e293b;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project-box {
+    background: #0f172a;
+    width: 260px;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+}
+
+.project-box h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.project-box p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* Contact */
+.contact {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.contact p {
+    margin: 15px;
+    color: #cbd5e1;
+}
+
+/* Footer */
+footer {
+    background: #111827;
+    text-align: center;
+    padding: 20px;
+    color: #cbd5e1;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 38px;
+    }
+
+    .home-img img {
+        width: 200px;
+        height: 200px;
+    }
+}
